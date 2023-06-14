@@ -54,8 +54,53 @@ $people = [
     'first name' => 'Nan',
     'last name' => 'Komo',
     'email addres' => 'nankomo234@gmail.com'
-  ]
+  ],
     
   ];
+  // Hypertext Preprocessor
  
-   echo $people[0]['email addres'];
+   //echo $people[2]['email addres '];
+   // asignment
+
+$CountCap = array(
+    "Italy" => "Rome",
+    "Luxembourg" => "Luxembourg",
+    "Belgium" => "Brussels",
+    "Denmark" => "Copenhagen",
+    "Finland" => "Helsinki",
+    "France" => "Paris",
+    "Slovakia" => "Bratislava",
+    "Slovenia" => "Ljubljana",
+    "Germany" => "Berlin",
+    "Greece" => "Athens",
+    "Ireland" => "Dublin",
+    "Netherlands" => "Amsterdam",
+    "Portugal" => "Lisbon",
+    "Spain" => "Madrid",
+    "Sweden" => "Stockholm",
+    "United Kingdom" => "London",
+    "Cyprus" => "Nicosia",
+    "Lithuania" => "Vilnius",
+    "Czech Republic" => "Prague",
+    "Estonia" => "Tallin",
+    "Hungary" => "Budapest",
+    "Latvia" => "Riga",
+    "Malta" => "Valetta",
+    "Austria" => "Vienna",
+    "Poland" => "Warsaw"
+);
+asort($CountCap);
+
+foreach ($CountCap as $country => $capital) {
+  echo "Capital:, " . $capital . " Country:, " . $country . "<br>";
+}
+
+
+// asort is used to arrange array in ascending order
+
+//the purpose foreach is to loop
+
+
+
+
+
