@@ -59,7 +59,7 @@ while($number<=20);
 */
 $number=30;
 $cars=45;
-foreach($array	 as $number){
+foreach("$number"){
   echo "the is number;";
 }
 // a loop is statement that stop repats itself until the statemnt is true
