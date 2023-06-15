@@ -82,7 +82,7 @@ elseif($age>18){
   echo"able to vote <br> ";
 }
 // question2
-$number=-1;
+$number=1;
 if($number<0){
   echo "the number is negative";
 
@@ -90,5 +90,36 @@ if($number<0){
 elseif($number>0){
   echo "the number is positive";
 }
-//what do you use to key in data in php in the console
 
+// Prompt the user for input
+echo "Enter your name: ";
+
+// Read input from the console
+$name = fgets(STDIN);
+
+// Remove any trailing newline characters
+$name = trim($name);
+
+// Display the input
+echo "Hello, $name!";
+
+$favoritefood='pilau';
+switch($favoritefood){
+  case'njahi':
+    echo 'my favorite food is njahi';
+    break;
+    case'liver':
+      echo 'my favorite food is liver';
+      break;
+      case'mokimo':
+        echo 'my favorite food is mokimo';
+        break;
+        case'githeri':
+          echo 'my favorite food is githeri';
+          break;
+            case'matoke':
+              echo 'my favorite food is matoke';
+              break;
+              default:
+              echo('my favorite food is pilau');}
+              
