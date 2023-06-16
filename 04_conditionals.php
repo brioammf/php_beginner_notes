@@ -118,7 +118,7 @@ switch($favoritefood){
           echo 'my favorite food is githeri';
           break;
             case'matoke':
-              echo 'my favorite food is matoke';
+              echo 'my favorite food is matoke';g
               break;
               default:
               echo('my favorite food is pilau');}
