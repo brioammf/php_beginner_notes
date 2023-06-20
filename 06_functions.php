@@ -39,3 +39,7 @@ function multipleFunction($n1, $n2){
   echo " $mult";
 }
 multipleFunction(60,30); 
+
+
+$color=array('white','green','red');
+echo ('array');
