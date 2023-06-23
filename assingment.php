@@ -78,13 +78,70 @@ and display the total.
    $total += $t;
 }
 echo $total;
-
+echo "<br>";
 /*7. Create a script to construct the following pattern, using nested for loop.*/
-/*8 */
-/*9*/
-$value=array()
 
-$value=1;
-while($value<=5){
-echo "increment number:$value<br>";
-$value ++;}
+$rows = 5; 
+
+for ($i = 1; $i <= $rows; $i++) {
+  for ($j = 1; $j <= $i; $j++) {
+    echo "* ";
+  }
+  echo "<br>";
+}
+?>
+<!DOCTYPE html>
+<body>
+    <table width ="270px" border="1px">
+
+<?php
+for ($row=1; $row<=8; $col++){
+    echo '<tr>';
+    for ($col=1;$col<=8; $col++ ) {
+      $total=$col+$row;
+      if($total%2==0){
+        echo "<td height=30px width=30px bgcolor=#000000></td>";
+
+      }
+      else{
+        echo "<td height=30px width=30px bgcolor=#FFFFFF></td>";
+      }
+    }echo"</tr>";
+  } ?>
+
+    
+</table>
+</body>
+</html>
+<?php
+/*9 . Write a PHP program to compute the sum of the two given integer values. 
+If the two values are the same, then returns triple their sumiy.
+Sample Input
+1, 2
+3, 2
+2, 2*/
+function computeSum($num1, $num2) {
+  $sum = $num1 + $num2;
+
+  if ($num1 == $num2) {
+    $sum *= 3;
+  }
+
+  return $sum;
+}
+
+$input = [
+  [1, 2],
+  [3, 2],
+  [2, 2]
+];
+
+foreach ($input as $pair) {
+  $num1 = $pair[0];
+  $num2 = $pair[1];
+  $result = computeSum($num1, $num2);
+  echo "Sum of $num1 and $num2: $result\n";
+}
+
+
+
