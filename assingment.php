@@ -92,11 +92,11 @@ for ($i = 1; $i <= $rows; $i++) {
 ?>
 <!DOCTYPE html>
 <body>
-    <table width ="270px" border="1px">
+    <table width ="270px" border="10px">
 
 <?php
-for ($row=1; $row<=8; $col++){
-    echo '<tr>';
+for ($row=1; $row<=8; $row++){
+   
     for ($col=1;$col<=8; $col++ ) {
       $total=$col+$row;
       if($total%2==0){
