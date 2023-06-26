@@ -21,7 +21,7 @@ for($count=1; $count<=5; $count++){
 ** While Loop Syntax
   while (condition) {
   // code to be executed
-  }
+  }                                                                                                                                                                                                                                                                                                                                                         
 
 */
 $value=1;
